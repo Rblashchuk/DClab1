@@ -38,9 +38,13 @@ def get_ans_filepath():
     return ans
 
 
-if __name__ == '__main__':
+def main():
     fr = get_exps_filepath()
     fw = get_ans_filepath()
     exps = file_to_exps(fr)
     ans = solve_exps(exps)
     ans_to_file(ans, exps, fw)
+
+
+if __name__ == '__main__':
+    main()
